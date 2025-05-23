@@ -39,19 +39,37 @@
       width: 100%;
     }
 
-    .video-section {
+    .video-section-quadrotor-rl {
       width: 600px;
       flex-shrink: 0;
       display: flex;
       align-items: flex-start;
       justify-content: center;
-      padding-top: 4rem;
+      padding-top: 0rem; /* adjust vertical position here */
     }
 
-    .video-section video {
+    .video-section-quadrotor-rl video {
       width: 100%;
       height: auto;
       display: block;
+    }
+
+    .img-section-quadrotor-sim {
+      width: 1100px;
+      flex-shrink: 0;
+      display: flex; 
+      flex-direction: row;
+      gap: 0rem;               
+      align-items: flex-start;
+      justify-content: center;
+      padding-top: 0rem; /* adjust vertical position here */
+    }
+
+    .img-section-quadrotor-sim img {
+      width: 50%;              
+      height: auto;
+      display: block;
+      border-radius: 6px;
     }
 
     .project-title {
@@ -70,15 +88,7 @@
         align-items: flex-start;
       }
 
-      .video-section,
-      .text-section {
-        width: 100%;
-      }
 
-      .video-section {
-        margin-top: 1rem;
-        padding-top: 0;
-      }
     }
   </style>
 </head>
@@ -97,12 +107,30 @@
         I tested different observation spaces, action spaces, and reward functions to optimize learning performance.
       </div>
     </div>
-    <div class="video-section">
+    <div class="video-section-quadrotor-rl">
       <video autoplay loop muted playsinline>
         <source src="/quadrotor_rl.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
     </div>
   </div>
+
+  <div class="project-container">
+    <div class="text-section">
+      <div class="project-title">Quadrotor Simulator</div>
+      <div class="project-description">
+        This project is a quadrotor simulator built in Python. Its purpose is to provide an environment for quickly prototyping and testing 
+        path-planning algorithms, control architectures, controllers, and sensor fusion techniques for autonomous flight. To increase realism, 
+        the simulator includes motor dynamics and simulated sensor data (GPS, IMU) which the quadrotor uses for state estimation.
+        The current setup uses waypoint-based navigation, a cascaded control architecture with a PID position controller in the outer loop and a
+        quaternion-based PD attitude controller in the inner loop, and an Extended Kalman Filter (EKF) for sensor fusion.
+      </div>
+    </div>
+    <div class="img-section-quadrotor-sim">
+      <img src="/quadrotor_sim_pos.png" alt="Quadrotor Position">
+      <img src="/quadrotor_sim_att.png" alt="Quadrotor Attitude">
+    </div>
+  </div>
+
 </body>
 </html>
