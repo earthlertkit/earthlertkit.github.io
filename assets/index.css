@@ -1,0 +1,81 @@
+/* Hero page styles */
+
+.center-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 90vh;
+  padding: 4rem;
+}
+
+.text-section {
+  max-width: 60%;
+  text-align: left;
+}
+
+.text-section > .name {
+  margin-bottom: 2.5rem;
+}
+
+.text-section > .about {
+  margin-top: 0;
+  margin-bottom: 2.5rem;
+}
+
+.text-section > .links {
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+.name {
+  font-size: 4.5rem;
+  line-height: 1.1;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.about {
+  margin-top: 2rem;
+  font-size: 1.25rem;
+  max-width: 750px;
+  color: #a0a0a0;
+}
+
+.links {
+  margin-top: 2rem;
+  font-size: 1.1rem;
+}
+
+.links a {
+  color: #ffffff;
+  text-decoration: none;
+  margin-right: 1.5rem;
+  position: relative;
+}
+
+.links a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: -2px;
+  left: 0;
+  background-color: #ffffff;
+  transition: width 0.3s ease;
+}
+
+.links a:hover::after {
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .center-content {
+    padding: 2rem;
+  }
+  .text-section {
+    max-width: 100%;
+  }
+  .name {
+    font-size: 3rem;
+  }
+} 
