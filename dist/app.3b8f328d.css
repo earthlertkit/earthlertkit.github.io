@@ -1,0 +1,113 @@
+html {
+  box-sizing: border-box;
+}
+
+*, :before, :after {
+  box-sizing: inherit;
+}
+
+body {
+  color: #fff;
+  background: #0a0a0a;
+  margin: 0;
+  padding: 0;
+  font-family: JetBrains Mono, monospace;
+  overflow-x: hidden;
+}
+
+.links {
+  margin-top: 2rem;
+  font-size: 1.1rem;
+}
+
+.links a {
+  color: #fff;
+  margin-right: 1.5rem;
+  text-decoration: none;
+  position: relative;
+}
+
+.links a:after {
+  content: "";
+  background-color: #fff;
+  width: 0;
+  height: 1px;
+  transition: width .3s;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+}
+
+.links a:hover:after {
+  width: 100%;
+}
+
+.main-header {
+  justify-content: flex-end;
+  align-items: flex-start;
+  width: 100%;
+  padding-top: 1.5rem;
+  padding-bottom: 2rem;
+  padding-right: 2.5rem;
+  display: flex;
+}
+
+.main-header nav a {
+  color: #fff;
+  margin-left: 2rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-decoration: none;
+  position: relative;
+}
+
+.main-header nav a:after {
+  content: "";
+  background-color: #fff;
+  width: 0;
+  height: 1px;
+  transition: width .3s;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+}
+
+.main-header nav a:hover:after {
+  width: 100%;
+}
+
+@media screen and (width <= 768px) {
+  body {
+    flex-direction: column;
+    padding: 2rem;
+  }
+
+  .text-section {
+    max-width: 100%;
+  }
+
+  .name {
+    font-size: 3rem;
+  }
+}
+
+.hero-box {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 50vw;
+  margin: 0;
+  padding: 0;
+}
+
+.left-aligned {
+  margin-right: auto;
+  padding: 3rem 0 3rem 4rem;
+}
+
+.right-aligned {
+  text-align: right;
+  align-items: flex-end;
+  margin-left: auto;
+  padding: 3rem 4rem 3rem 0;
+}
+/*# sourceMappingURL=app.3b8f328d.css.map */

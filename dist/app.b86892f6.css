@@ -1,0 +1,82 @@
+.center-content {
+  flex-direction: column;
+  justify-content: center;
+  min-height: 90vh;
+  padding: 4rem;
+  display: flex;
+}
+
+.text-section {
+  text-align: left;
+  max-width: 60%;
+}
+
+.text-section > .name {
+  margin-bottom: 2.5rem;
+}
+
+.text-section > .about {
+  margin-top: 0;
+  margin-bottom: 2.5rem;
+}
+
+.text-section > .links {
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+.name {
+  letter-spacing: -.02em;
+  font-size: 4.5rem;
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+.about {
+  color: #a0a0a0;
+  max-width: 750px;
+  margin-top: 2rem;
+  font-size: 1.25rem;
+}
+
+.links {
+  margin-top: 2rem;
+  font-size: 1.1rem;
+}
+
+.links a {
+  color: #fff;
+  margin-right: 1.5rem;
+  text-decoration: none;
+  position: relative;
+}
+
+.links a:after {
+  content: "";
+  background-color: #fff;
+  width: 0;
+  height: 1px;
+  transition: width .3s;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+}
+
+.links a:hover:after {
+  width: 100%;
+}
+
+@media screen and (width <= 768px) {
+  .center-content {
+    padding: 2rem;
+  }
+
+  .text-section {
+    max-width: 100%;
+  }
+
+  .name {
+    font-size: 3rem;
+  }
+}
+/*# sourceMappingURL=app.b86892f6.css.map */
