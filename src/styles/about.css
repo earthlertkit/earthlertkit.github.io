@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
+
+
+.about-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+}
+
+.about-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.about-description {
+  font-size: 1.2rem;
+  color: #b0b0b0;
+  margin-bottom: 2rem;
+}
+
+.about-section {
+  margin-bottom: 2.5rem;
+}
+
+.about-section-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+}
+
+.about-section-content {
+  font-size: 1.05rem;
+  color: #cccccc;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  gap: 5rem;
+  margin-top: 2rem;
+}
+
+.skill-card {
+  background: #181818;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+  padding: 2.2rem 2rem;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #fff;
+  border: 2.5px solid #333;
+  transition: transform 0.18s, box-shadow 0.18s;
+  min-height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.skill-card:hover {
+  transform: translateY(-8px) scale(1.06);
+  box-shadow: 0 12px 36px rgba(76,175,80,0.18);
+  border-color: #4caf50;
+}
+
+@media screen and (max-width: 900px) {
+  .about-container {
+    padding: 1.5rem 0.5rem;
+  }
+  .about-title {
+    font-size: 2rem;
+  }
+  .skills-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(11, 1fr);
+    gap: 1.5rem;
+  }
+  .skill-card {
+    font-size: 1.1rem;
+    padding: 1.2rem 0.7rem;
+    min-height: 60px;
+  }
+} 
