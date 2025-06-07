@@ -2,7 +2,7 @@ import React from 'react';
 import Header from './Header';
 import TwoColumnBox from './TwoColumnBox';
 import '../styles/about.css';
-import { ABOUT, SKILLS } from '../constants/about.js';
+import { ABOUT } from '../constants/about.js';
 import SkillCard from './SkillCard';
 
 const About = () => (
@@ -18,7 +18,7 @@ const About = () => (
         }
         right={
           <div className="skills-grid">
-            {SKILLS.map(skill => (
+            {['Python', 'C++', 'JavaScript', 'React', 'Three.js', 'ROS', 'MuJoCo', 'OpenAI Gym'].map(skill => (
               <SkillCard key={skill} skill={skill} />
             ))}
           </div>
